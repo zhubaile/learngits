@@ -1,0 +1,96 @@
+
+http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/
+廖雪峰的git网站
+ 
+
+git config --global user.email "email@example.com"
+（自报家门）
+
+git 作用 多人合作管理代码
+
+git 本地修改后提交的远程代码管理仓库
+
+
+git 的常用命令
+
+*   git status 查看本地文件修改状态
+
+*   git add    将本地修改的提交到暂存区
+ 
+  *  git commit -m '提交说明' 本地提交
+
+   * git pull 拉去远程代码到本地
+
+  * git clone git地址   拷贝远程服务代码到本地
+
+       ***     git log查看之前提交的东西(git log --pretty=oneline)
+                （git log --graph）命令可以看到分支合并图
+
+git reset --hard HEAD^退回到上一个版本（^几个就代表几个，多了就HEAD~100）  【【【回退版本】】】
+
+git reset --hard (commit_id版本号)回到之前的版本                            
+
+git reflog记录每一次的命令
+
+{git checkout -- readme.txt意思就是，把readme.txt文件在工作区的修改全部撤销，这里有两种情况：
+
+一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+
+一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。}
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，
+第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。（file表示文件名称）
+
+如果不小心误删了，git checkout -- file（文件名）可以一键恢复，找回来
+
+git rm file（file文件名）会确实删除文件；删除版本库的文件
+
+**  git remote add origin git@github.com:（账户名）/learngit（仓库名）.git     【【【创建远程仓库】】】   
+
+git push origin  master（分支名） 将本地当前
+分支发布到远程master分支，即提交代码到远程仓库
+
+你命令行的代码 从远程克隆仓库 不用你那有，直接 git clone +git仓库地址
+（git clone git@github.com:(地址michaelliao/gitskills).git）
+
+git checkout -b dev(参数表示创建并切换分支，相当于两条命令)                   （分支创建与切换）
+(git branch dev(创建dev分支)    ,    gitcheckout dev(切换到dev分支)）
+
+git branch命令查看当前分支，*会标记在当前分支
+
+git merge dev命令用于合并指定分支到当前分支（用的是Fast forward,合并完成后不会有合并信息）
+git merge --no-ff -m "merge with no-ff" dev (这是普通合并，可以看到曾经做过分支合并)
+
+git branch -d dev（删除分支dev）  ，   git branch -D <name>强行删除（丢弃一个没有被合并的分支）
+
+git stash 把分支储存在一个地方，
+git stash pop 恢复工作区域
+git stash list 命令查看分支储存在什么地方
+
+查看远程库信息，使用git remote -v；                         多人协作的远程库和关联
+
+本地新建的分支如果不推送到远程，对其他人就是不可见的；
+
+从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+
+在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+
+建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+
+git tag 查看所有标签                                       【【【创建标签】】】
+切换到需要的分支 用  git tag <name>可以打开一个新标签。
+如果忘记打标签，git log --pretty=oneline --abbrev-commit（找到历史提交的commit id）
+git tag v0.9 6224937（对应的是commit ID的命令）就可以创建标签
+git show <tagname>查看标签的信息         也可以看到说明文字
+git tag -a v0.9 -m "version 0.9.released"3628164【-a指定标签名，-m指定说明文字】
+git tag -d <tagname>【删除一个标签】
+git push origin <tagname>把标签推送到远程
+git push origin --tags一次性推送全部尚未推送到远程的本地标签
+git push origin ：refs/tags/v0.9【远程删除标签】如果标签推送到远程了，就先在本地删除在远程删除
+
+.gittgnore忽略某些文件，本身要放到版本库里。git add -f(文件名)强制添加文件
+
+git config --global alias.st status 简写用st代替命令status
