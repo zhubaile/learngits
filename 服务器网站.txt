@@ -1,0 +1,112 @@
+             服务器网站
+http://www.cnblogs.com/zhangchaoyang/articles/2309335.html
+
+http://blog.csdn.net/yuanguozhengjust/article/details/25747729
+
+http://www.trueland.net/zhujiwenti/iis.shtml
+           js学习基础网
+https://ke.qq.com/course/134996
+https://ke.qq.com/course/218997
+            html命名规范网站
+http://www.zhangxinxu.com/wordpress/2010/09/%E7%B2%BE%E7%AE%80%E9%AB%98%E6%95%88%E7%9A%84css%E5%91%BD%E5%90%8D%E5%87%86%E5%88%99%E6%96%B9%E6%B3%95/
+            雪碧图：
+http://blog.163.com/zhangmihuo_2007/blog/static/270110752015011391211/
+http://www.cnblogs.com/xiaohuochai/p/4793421.html
+http://www.jianshu.com/p/7482dde882af
+补充：
+为什么要用雪碧图
+答:优化减少浏览器加载图片的数量，使得网页内容更快的展示给用户
+            Iconfront:
+http://design.jobbole.com/119746/
+http://blog.csdn.net/saluton1993ad/article/details/37936329
+http://www.cnblogs.com/camille666/p/iconfont.html 
+补充：
+为什么要用iconfront代替图片
+答:iconfront 体积小，网页渲染更快，改变颜色不需要换图，
+推荐使用阿里的字体库，自己定制咱们项目中用到的图标：http://www.iconfont.cn/
+
+    <!-- 
+        CSS布局之--淘宝双飞翼布局：
+        http://www.cnblogs.com/langzs/archive/2013/01/27/taobaoshuangfeiyi.html
+    下面的布局也可以看看：
+    http://www.cduyzh.com/css-layout/
+    http://www.bkjia.com/CSSjc/341777.html
+    http://www.bkjia.com/CSSjc/341777.html
+    http://www.cnblogs.com/caocaoyu/archive/2009/05/04/1448787.html
+    http://www.cnblogs.com/koushr/p/5899415.html
+    http://blog.csdn.net/jutal_ljt/article/details/71439844
+    http://www.cnblogs.com/WestGarden/archive/2012/11/19/3138315.html
+    -->
+http://www.layui.com/demo/timeline.html
+         近期 通过开发登录页面了解 ajax
+requirejs ：http://www.ruanyifeng.com/blog/2012/11/require_js.html 
+handlebars：http://www.ghostchina.com/introducing-the-handlebars-js-templating-engine/ 
+
+
+
+requirejs 你了解不
+http://www.ruanyifeng.com/blog/2012/11/require_js.html
+http://www.ruanyifeng.com/blog/2012/10/javascript_module.html
+
+ajax jquery
+http://jquery.cuishifeng.cn/jQuery.Ajax.html
+http://www.jb51.net/article/70587.htm
+
+        本周需要掌握的
+1、jquery相关
+这个jquery api文档，以后务必记住，有不懂的方法，在这里查：
+http://jquery.cuishifeng.cn/
+不需要全部记住，多用用就行了。
+http://www.cnblogs.com/LeoBoy/p/5849079.html
+这个里面是jquery常用方法，务必都试一遍。
+你login.js 里面有些jquery使用不合理的，看完后看看能否找到
+2、requirejs
+requirejs的使用，看下面的文档，
+http://www.ruanyifeng.com/blog/2012/11/require_js.html
+http://www.jianshu.com/p/b8a6824c8e07
+目标看懂咱们项目的requirejs配置，能自己添加模块
+3、handlebars
+http://www.cnblogs.com/iyangyuan/archive/2013/12/12/3471227.html
+http://www.ghostchina.com/introducing-the-handlebars-js-templating-engine/
+【（//  this   闭包、原型、原型链  new）】
+目标看懂Rental\public\js\side\index.js的实现
+知道handlebars常用语法，会用handlebars的helper
+以上内容务必本周看完，不要随便一扫就觉得看会了，多写例子试试。
+国庆节回来后开始项目，不要一问这不会，问那不知道。
+
+https://coolshell.cn/articles/17634.html
+就是浏览器缓存。（http://www.cnblogs.com/wangpenghui522/p/5498427.html）
+http://blog.csdn.net/yiifaa/article/details/52372022  （输入框时间绑定网站）
+https://www.cnblogs.com/wangfupeng1988/p/3977924.html（原型和闭包）
+http://www.zhangxinxu.com/wordpress/2010/01/jquery-pagination-ajax%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6%E4%B8%AD%E6%96%87%E8%AF%A6%E8%A7%A3/（jquery的分页插件 pagination.js）
+
+http://www.jq22.com/jquery-info819【插件动态css3网址】
+https://www.w3.org/TR/css-transitions-1/#animatable-css
+http://leaverou.github.io/animatable/
+
+https://www.w3cplus.com/css3/a-guide-to-flexbox.html（一个完整的Flexbox指南）
+
+媒体查询：https://www.ibm.com/developerworks/cn/web/wa-cssqueries/
+
+响应式布局：http://caibaojian.com/356.html
+
+rem认识：https://www.w3cplus.com/css3/define-font-size-with-css3-rem
+https://www.cnblogs.com/leejersey/p/3662612.html
+
+移动端布局：http://blog.csdn.net/jsonchen007/article/details/51942449
+http://www.jianshu.com/p/91febb9b827d
+
+https://www.cnblogs.com/zjx2011/p/4930515.html
+
+http://www.runoob.com/【菜鸟学习网站】
+
+react视频教程：
+https://ke.qq.com/course/227111 
+https://ke.qq.com/course/237349 
+
+
+var sheng=["河北省","山西省","河南省"];
+var shi=[["石家庄市","张家口市","承德市","秦皇岛市"],["太原市","朔州市","大同市","阳泉市"],["郑州市","安阳市","鹤壁市","新乡市"]];
+var xian=[[["无极县","赵县","黎城县"],["沽源县","尚义县","阳原县"],["平泉县","栾庆县","隆化县"],["安定县","小康县","微笑县"]],
+[["这个线","哪个县","你好闲"],["无极县","赵县","黎城县"],["无极县","赵县","黎城县"],["无极县","赵县","黎城县"]],
+[["郑东新区","龙子湖","金水"],["无极县","赵县","黎城县"],["无极县","赵县","黎城县"],["无极县","杞县","浚县"]]];

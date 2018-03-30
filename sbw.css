@@ -77,9 +77,12 @@ form h2{
     margin: 0 auto;
     color: white;
 }
-
-
-
  #check:checked+label{
     color: red;
+}
+#Mydiv{
+    display: none;
+}
+.responseText{
+    display: block;
 }

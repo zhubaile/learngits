@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <title>随便玩+++++++++++++</title>
     <link rel="stylesheet" type="text/css" href="sbw.css">
+    <script src="ajax_amd.js"></script>
+    <script>
+        function loadXMLDoc()
+        {
+            var xmlhttp;
+            if (window.XMLHttpRequest)
+            {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp=new XMLHttpRequest();
+            }
+            else
+            {// code for IE6, IE5
+                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange=function()
+            {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open("GET","/index.html,true)
+            xmlhttp.send();
+        }
+    </script>
 </head>
 <body>
 <div class="all">
-<div class="nav">
-    <ul>
-        <li><a href="#">首页</a>
-        <div class="nav-fb">
-            <a>你好</a>
-            <a>你好</a>
-            <a>你好</a>
-        </div>
-        </li>
-        <li><a href="#">主页</a></li>
-        <li><a href="#">副业</a></li>
-        <li><a href="#">你好</a></li>
-        <li><a href="#">导航</a></li>
-        <li><a href="#">首秀</a></li>
-        <li><a href="#">联系我们</a></li>
-    </ul>
-</div>
-
 <form action="#">
     <table width="300">
         <tr>
@@ -52,20 +58,15 @@
         </tr>
     </table>
 </form>
-<div class="nr">
-    nihao   wohuiweixiao  nine nihuizenmeyangl最怕空气突然安静最怕回忆突然翻滚绞痛着不平息最怕突然听到你的消息
-    香奈你如果会有声音事到如今终于让自己属于我自己还剩下眼泪还骗不过自己突然好想你你会在哪里过得快乐或委屈
-    突然好想你突然锋利的回忆我们像一首最美的歌曲变成两不悲伤的电影为什么难忘的陆行让后留下最痛的纪念品，突然好
-    你会在哪里想你women nametianmamemei马么相信突然好想你突然锋利的回忆突然模糊的眼睛最怕空气突然安静最怕朋友突
-    最怕突然听到你的消息然的关心最怕此生
-</div>
-    <div class="center">liuqninalihao</div>
     </div>
-
-
 <form action="">
     <input type="radio" name="check" id="check" />
     <label for="check">淘宝选项</label>
 </form>
+<div>
+    <h2>ajax</h2>
+    <input type="button" onclick="loadXMLDoc()" value="请求数据"/>
+    <div id="Mydiv">你好，李新旺是傻逼，超级大傻逼，臭脚而且爱抽鸡毛的烟</div>
+</div>
 </body>
 </html>

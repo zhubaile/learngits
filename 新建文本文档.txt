@@ -1,1 +1,171 @@
-123456
+*{
+    font-size: 14px;
+}
+body{
+    min-width: 1350px;
+}
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    background-color: #444444;
+}
+#nav .sprite{
+    position: relative;
+    margin-top: 20px;
+}
+.sprite ul li{
+    cursor: pointer;
+    width: 75px;
+    text-align: center;
+}
+.sprite ul li a{
+    color: #e0e0e0;
+    line-height: 50px;
+    margin-left: -15px;
+}
+.sprite ul li s{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    display: block;
+    float: left;
+    margin-left: -10px;
+    background-image: url("../image/sprite.png");
+}
+.sprite ul li:hover{
+    background-color: white;
+}
+.sprite ul li:hover a{
+    color: black;
+}
+#nav .nav-fonted{
+    position: absolute;
+    bottom: 70px;
+    width: 75px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+#nav .nav-fonted:hover{
+    background-color: #535353;
+}
+#matter{
+    position: absolute;
+    left: 75px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+#matter #second{
+    float: left;
+    width: 120px;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
+}
+#second h2{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+#second ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #909090;
+}
+#matter #third{
+    float: left;
+    border: 1px solid blue;
+}
+#third #heared{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+#heared h2{
+    position: relative;
+    line-height: 40px;
+    margin-left: 30px;
+    font-size: 16px;
+}
+#heared span{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    line-height: 40px;
+    font-size: 30px;
+}
+#third #box{
+    position: relative;
+    background-color: #f2f2f2;
+}
+#box .box-first{
+    margin: 10px;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+#box .box-first .box-first-one{
+    width: 900px;
+    height: 258px;
+    margin: 20px 20px 10px 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+}
+.box-first-one .one-heared{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+}
+.box-first-one .one-heared>h2{
+    float: left;
+    padding-left: 10px;
+}
+.one-heared>span{
+    float: right;
+    padding-right: 10px;
+}
+.box-first-one .one-left{
+    width: 560px;
+    height: 190px;
+    float: left;
+    padding: 25px 0 0 10px;
+    border: 1px solid #e5e5e5;
+}
+.box-first-one .one-left table{
+    height: 10px;
+}
+.box-first-one .one-right{
+    width: 316px;
+    height: 190px;
+    float: right;
+    padding-left: 10px;
+    padding-top: 25px;
+    border: 1px solid #e5e5e5;
+}
+#box .box-first .box-first-two{
+    width: 900px;
+    height: 130px;
+    margin: 0 20px 10px 20px;
+    border: 1px solid red;
+}
+#third #fonted{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 70px;
+    background-color:#f2f2f2;
+}
+#fonted .fonted-logo{
+    position: relative;
+    text-align: center;
+}
