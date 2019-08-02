@@ -1,0 +1,25 @@
+copy /b nw.exe+app.nw app.exe
+
+首先打软件选择新建（new file的第二个选项）
+ok-next
+应用程序名称（桌面上的运行图标的名称） next
+next
+需要打包的exe，和主要的文件夹  next
+next next 选择中文（中文的可以下载个压缩包放在Inno Setup 的语言文件夹下面） next
+输出的文件夹名称  （安装这个.exe的路径）
+编译输出的基本文件名（.exe的名称）
+自定义安装的图标文件（.exe的图标）
+
+
+
+第一个判断表示直接运行还是修改代码  如果你修改桌面图标就点否然后：
+修改桌面的软件图标（代码）
+在icon后面添加IconFilename: "{app}\CanCfg.ico"   如下：
+Name: "{userdesktop}\我的程序"; Filename: "{app}\DataMgrD.exe"; Tasks: desktopicon;IconFilename: "{app}\CanCfg.ico" 
+
+
+
+第二个判断 是保不保存.iss文件（就是编译文件）
+
+
+

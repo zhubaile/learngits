@@ -1,0 +1,13 @@
+http://www.phpcms.cn/   下载phpcms软件
+https://blog.csdn.net/su_internet/article/details/39669999    安装教程
+https://www.mokuge.com/webdesign/phpcms/
+
+http://localhost/index.php?m=admin   启动后台的网址
+
+登录名：phpcms
+密  码：899223
+www里面statics是静态的，图片，js和css
+phpcms里面的templates里面的default的content里面是   界面
+
+
+后台网址里面，内容里面的管理栏目；点击修改，里面的模板设置可以看出，内容的路径；

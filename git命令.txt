@@ -1,10 +1,13 @@
 用户名：zhubaile
   密码：GITzbl899223
 
+配置ssh提交      ssh-keygen -t rsa -C "1367050904@qq.com" 
+自动生成的 .pub文件，将文件内容复制到git配置里面就行了。
 
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/
 廖雪峰的git网站
  
+git config --global credential.helper store(如果clone拉的是http模式的话，输入这个命令不用每次都输入密码了)
 
 git config --global user.email "email@example.com"
 （自报家门）
@@ -12,9 +15,12 @@ git config --global user.email "email@example.com"
 git 作用 多人合作管理代码
 
 git 本地修改后提交的远程代码管理仓库
+git reset --hard 9ae942 （回到版本号）
+
+$ git reset HEAD^   （回退一个版本）
 
 
-git 的常用命令
+git 的常用命令                                                           【【【常用操作】】】
 cd /e/work/Rental
 
 * git add  . (把你修改的内容提交)
@@ -61,13 +67,14 @@ git push origin  master（分支名） 将本地当前
 你命令行的代码 从远程克隆仓库 不用你那有，直接 git clone +git仓库地址
 （git clone git@github.com:(地址michaelliao/gitskills).git）
 
-git checkout -b dev(参数表示创建并切换分支，相当于两条命令)                   （分支创建与切换）
+git checkout -b dev(参数表示创建并切换分支，相当于两条命令)                  【【【【【 （分支创建与切换）】】】】】
 (git branch dev(创建dev分支)    ,    git checkout dev(切换到dev分支)）
 
 git branch命令查看当前分支，*会标记在当前分支
 
-git merge dev命令用于合并指定分支到当前分支（用的是Fast forward,合并完成后不会有合并信息）
+git merge dev命令用于合并指定分支到当前分支（用的是Fast forward,合并完成后不会有合并信息，注意先切换到master主分支在执行这个命令，看具体情况操作）
 git merge --no-ff -m "merge with no-ff" dev (这是普通合并，可以看到曾经做过分支合并)
+git merge --squash -m "merge with no-ff" dev（是用来把一些不必要commit进行压缩）
 
 git branch -d dev（删除分支dev）  ，   git branch -D <name>强行删除（丢弃一个没有被合并的分支）
 
@@ -103,6 +110,12 @@ git push origin ：refs/tags/v0.9【远程删除标签】如果标签推送到远程了，就先在本地
 git config --global alias.st status 简写用st代替命令status
 
 
+【git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:zhubaile/cmc.git
+git push origin master
+】
 
 1.git init(本地文件初始化)
 2.git remote add origin git@github.com:zhubaile/learngits.git(连接到远程仓库)
